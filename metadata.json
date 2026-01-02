@@ -1,0 +1,5 @@
+{
+  "name": "Curriculum Aging Index (CAI)",
+  "description": "An AI-powered platform to analyze university curricula against real-time industry demands, calculating an aging index and providing gap analysis, learning resources, and validation tests.",
+  "requestFramePermissions": []
+}
