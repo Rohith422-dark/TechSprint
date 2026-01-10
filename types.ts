@@ -27,6 +27,12 @@ export interface Skill {
   category: string;
 }
 
+export interface HeatmapPoint {
+  x: string; // The Skill/Topic Group
+  y: string; // The Complexity Level (e.g., Intro, Advanced, Mastery)
+  value: number; // 0-100 score of alignment
+}
+
 export interface AnalysisResult {
   score: number;
   matchedSkills: string[];
@@ -38,6 +44,8 @@ export interface AnalysisResult {
     modernity: number;
   };
   explanation: string;
+  heatmapData: HeatmapPoint[];
+  generatedDiagramUrl?: string;
 }
 
 export interface Resource {
